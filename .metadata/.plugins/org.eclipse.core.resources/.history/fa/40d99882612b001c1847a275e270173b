@@ -1,0 +1,5 @@
+package com.zensar.spring.spring_core.beans;
+
+public class Product {
+
+}
