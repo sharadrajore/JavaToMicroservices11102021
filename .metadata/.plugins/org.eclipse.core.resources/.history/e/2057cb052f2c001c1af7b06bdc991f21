@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="myProduct1" class="com.zensar.spring.spring_core.beans.Product">
+	<!-- 	<property name="productId">
+			<value>1</value>
+		</property>
+		
+		<property name="productName">
+			<value>HDD</value>
+		</property> -->
+		
+		<property name="productId" value="2"></property>
+		<property name="productName" value="Mouse"></property>
+		
+	</bean>
+	
+	<!-- Setter Injection  -->
+	<!-- <bean id="emp1" class="com.zensar.spring.spring_core.beans.Employee">
+		<property name="employeeId" value="123"></property>
+		<property name="employeeName" value="123"></property>
+		<property name="salary" value="10000"></property>
+		<property name="address" ref="addr"></property>
+	</bean> -->
+	
+	
+	<!-- Constructor Injection  -->
+	<bean id="emp1" class="com.zensar.spring.spring_core.beans.Employee">
+		<constructor-arg value="1001" type="int" index="2"></constructor-arg>
+		<constructor-arg value="RAM" type="java.lang.String" index="1"></constructor-arg>
+	</bean>
+	
+	
+	
+	
+	
+	<bean id="addr" class="com.zensar.spring.spring_core.beans.Address">
+			<property name="state" value="Maha"></property>
+			<property name="city" value="Pune"></property>
+			<property name="pinCode" value="411046"></property>
+	</bean>
+	
+	
+	
+
+	
+
+</beans>

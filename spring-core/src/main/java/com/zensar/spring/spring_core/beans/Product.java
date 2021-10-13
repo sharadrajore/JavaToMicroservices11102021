@@ -49,11 +49,11 @@ public class Product {
 		this.productCost = productCost;
 	}
 
-	/*@Override
+	@Override
 	public String toString() {
 		return "Product [productId=" + productId + ", productName=" + productName + ", productCost=" + productCost
 				+ "]";
-	}*/
+	}
 
 	
 	
