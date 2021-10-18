@@ -1,16 +1,25 @@
 package com.zensar.spring.spring_core.beans;
 
-public class Address {
+public  class Address {
 
 	private String state;
 	
 	private String city;
 	
 	private int pinCode;
+	
+	
 
 	public Address() {
 		super();
 	}
+	
+	
+	
+
+	
+
+
 
 	public Address(String state, String city, int pinCode) {
 		super();
@@ -46,6 +55,15 @@ public class Address {
 	@Override
 	public String toString() {
 		return "Address [state=" + state + ", city=" + city + ", pinCode=" + pinCode + "]";
+	}
+	
+	public void myInit() {
+		System.out.println("inside public void myInit() of Address");
+	}
+	
+	
+	public void myDestroy(){
+		System.out.println("inside public void myDestroy() in Address");
 	}
 	
 	

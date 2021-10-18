@@ -1,25 +1,22 @@
 package com.zensar.spring.spring_core.beans;
 
-public class Employee {
-	
-	private int employeeId;
-	
-	private String employeeName;
-	
-	private int salary;
-	
-	private Address address;
-	
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
-	
+public class Employee {
+
+	private int employeeId;
+
+	private String employeeName;
+
+	private int salary;
+
+	private Address address;
 
 	public Employee() {
 		super();
+		System.out.println("public Employee()");
 	}
-
-
-	
-	
 
 	public Employee(int employeeId, String employeeName, int salary) {
 		super();
@@ -28,9 +25,8 @@ public class Employee {
 		this.employeeName = employeeName;
 		this.salary = salary;
 	}
-	
-	
-	public Employee(int employeeId,String employeeName,String salary) {
+
+	public Employee(int employeeId, String employeeName, String salary) {
 		System.out.println("Inside public Employee(String employeeId,String employeeName,String salary)2");
 	}
 
@@ -82,9 +78,16 @@ public class Employee {
 				+ ", address=" + address + "]";
 	}
 
+	@PostConstruct
+	public void myPropertiesSet() throws Exception {
+		System.out.println("Inside public void myPropertiesSet()");
 
-	
-	
-	
+	}
+
+	@PreDestroy
+	public void myDestroy() throws Exception {
+		System.out.println("Inside public void destroy()");
+
+	}
 
 }
