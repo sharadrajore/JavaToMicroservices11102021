@@ -1,9 +1,0 @@
-package com.zensar.spring.spring_core.beans;
-
-public class Product {
-	
-	private Product() {
-		System.out.println("Product class const !!!");
-	}
-
-}
