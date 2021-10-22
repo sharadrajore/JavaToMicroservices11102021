@@ -26,6 +26,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.zensar.spring"/>
 			<item value="com.zensar.spring.spring_core"/>
 			<item value="com.zensar.spring.sample_app"/>
 		</list>
@@ -33,6 +34,7 @@
 			<item value="com.zensar.spring"/>
 		</list>
 		<list key="artifactId">
+			<item value="product-management"/>
 			<item value="spring-core"/>
 			<item value="sample-app"/>
 		</list>

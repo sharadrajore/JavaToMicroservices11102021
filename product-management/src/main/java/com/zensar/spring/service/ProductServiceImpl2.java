@@ -11,7 +11,7 @@ import com.zensar.spring.repository.ProductRepository;
 public class ProductServiceImpl2 implements ProductService {
 
 	@Autowired
-	
+	//@Qualifier("productRepositoryImpl2")
 	private ProductRepository productRepository;
 	
 	public void insertProduct(Product product) {

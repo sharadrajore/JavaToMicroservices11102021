@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=product-management/src\/main\/java&lt;com.zensar.spring.repository{ProductRepository.java[ProductRepository" modifiers="513" timestamp="1634738640497"/>
+<typeInfo handle="=product-management/src\/main\/java&lt;com.zensar.spring.service{ProductService.java[ProductService" modifiers="513" timestamp="1634739782017"/>
+</typeInfoHistroy>

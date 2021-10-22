@@ -12,7 +12,7 @@ import com.zensar.spring.service.ProductService;
 public class ProductController {
 	
 	@Autowired
-	@Qualifier("productServiceImpl2")
+	@Qualifier("productServiceImpl1")
 	private ProductService productService;
 	
 	public void insertProduct(Product product) {

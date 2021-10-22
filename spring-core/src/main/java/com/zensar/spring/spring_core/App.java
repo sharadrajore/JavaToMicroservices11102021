@@ -1,9 +1,7 @@
 package com.zensar.spring.spring_core;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 import com.zensar.spring.spring_core.beans.Employee;
 
@@ -12,9 +10,14 @@ public class App {
 	
 		ApplicationContext context=new ClassPathXmlApplicationContext("context.xml");
 		
-		Employee employee=context.getBean("emp1",Employee.class);
 		
-		System.out.println(employee);
+		Employee employee1=(Employee)context.getBean("emp1");
+		Employee employee2=(Employee)context.getBean("emp1");
+		
+		System.out.println(employee1.hashCode());
+		System.out.println(employee2.hashCode());
+		
+	
 
 	}
 }

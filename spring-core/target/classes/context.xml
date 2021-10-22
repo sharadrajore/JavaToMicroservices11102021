@@ -6,8 +6,18 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 
-	 <context:component-scan base-package="com.zensar"></context:component-scan> 
-	
-	 <context:property-placeholder location="myproperties.properties"/>
+	 <bean id="emp1" class="com.zensar.spring.spring_core.beans.Employee"  scope="prototype" >
+	 	<property name="employeeId" value="10"></property>
+	 	<property name="employeeName" value="Ram"></property>
+	 	<property name="salary" value="20000"></property>
+	 	<property name="address" ref="addr"></property>
+	 </bean>
+	 
+	 <bean id="addr" class="com.zensar.spring.spring_core.beans.Address">
+	 	<property name="state" value="Maha"></property>
+	 	<property name="city" value="Pune"></property>
+	 </bean>
+	 
+	 <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
 	 
 </beans>
