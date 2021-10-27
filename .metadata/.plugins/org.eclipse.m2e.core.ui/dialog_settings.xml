@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Java11102021\java-config\src\main\java\com\zensar\spring\config\DemoConfig.java"/>
 			<item value="D:\Java11102021\sample-app"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,17 +27,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.zensar.spring"/>
-			<item value="com.zensar.spring.spring_core"/>
-			<item value="com.zensar.spring.sample_app"/>
 		</list>
 		<list key="groupId">
-			<item value="com.zensar.spring"/>
 		</list>
 		<list key="artifactId">
-			<item value="product-management"/>
-			<item value="spring-core"/>
-			<item value="sample-app"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

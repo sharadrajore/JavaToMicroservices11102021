@@ -1,15 +1,36 @@
 package com.zensar.spring.beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import test.Address;
+
+@Component
 public class Employee {
 	
+	@Value("${empId}")
 	private int employeeId;
 	
+	@Value("${empName}")
 	private String employeeName;
 	
+	@Value("${salary}")
 	private int employeeSalary;
 	
 	
+	@Autowired
+	private Address address;
 	
+	
+	
+	
+	
+
+	public Employee(Address address) {
+		super();
+		this.address = address;
+	}
 
 	public Employee() {
 		super();
@@ -20,6 +41,16 @@ public class Employee {
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
 		this.employeeSalary = employeeSalary;
+	}
+	
+	
+
+	public Employee(int employeeId, String employeeName, int employeeSalary, Address address) {
+		super();
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.employeeSalary = employeeSalary;
+		this.address = address;
 	}
 
 	public int getEmployeeId() {
@@ -45,12 +76,24 @@ public class Employee {
 	public void setEmployeeSalary(int employeeSalary) {
 		this.employeeSalary = employeeSalary;
 	}
+	
+	
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 
 	@Override
 	public String toString() {
 		return "Employee [employeeId=" + employeeId + ", employeeName=" + employeeName + ", employeeSalary="
-				+ employeeSalary + "]";
+				+ employeeSalary + ", address=" + address + "]";
 	}
+
+	
 	
 	
 	

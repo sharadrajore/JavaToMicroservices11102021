@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="org.springframework.beans.factory.DisposableBean"/>
 <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanFactory"/>
-<fullyQualifiedTypeName name="org.springframework.core.io.Resource"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.FileSystemXmlApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.core.io.FileSystemResource"/>
 <fullyQualifiedTypeName name="java.util.List"/>
@@ -13,12 +12,10 @@
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="lombok.Data"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="com.zensar.spring.service.ProductServiceImpl1"/>
 <fullyQualifiedTypeName name="com.zensar.spring.service.ProductService"/>
 <fullyQualifiedTypeName name="com.zensar.spring.repository.ProductRepository"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="com.zensar.spring.controllers.ProductController"/>
@@ -30,4 +27,16 @@
 <fullyQualifiedTypeName name="com.zensar.spring.spring_core.beans.Employee"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.InitializingBean"/>
 <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+<fullyQualifiedTypeName name="com.zensar.spring.config.DemoConfig"/>
+<fullyQualifiedTypeName name="com.zensar.spring.beans.Employee"/>
+<fullyQualifiedTypeName name="com.zensar.spring.beans.GreetingImpl2"/>
+<fullyQualifiedTypeName name="com.zensar.spring.beans.Greeting"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowire"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.PropertySource"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.Resource"/>
 </qualifiedTypeNameHistroy>
