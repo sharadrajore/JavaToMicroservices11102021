@@ -2,6 +2,7 @@ package com.zensar.spring.config;
 
 import javax.sql.DataSource;
 
+import org.omg.CORBA.Environment;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -11,8 +12,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 @Configuration
+@PropertySource(value = {"myprop.properties"})
 @ComponentScan("com.zensar")
-@PropertySource("application.properties")
 public class AppConfig {
 	
 	@Value("${jdbc.driverClassName}")
@@ -26,9 +27,12 @@ public class AppConfig {
 	
 	
 	
+	
+	
 	@Bean
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource=new DriverManagerDataSource();
+		
 		dataSource.setDriverClassName(driverClassName);
 		dataSource.setUrl(url);
 		dataSource.setUsername(username);

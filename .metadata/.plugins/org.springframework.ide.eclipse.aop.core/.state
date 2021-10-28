@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="spring-core"/>
+<aop-project name="product-management-java-config"/>
 <aop-project name="java-config"/>
 </aop-reference-model>
