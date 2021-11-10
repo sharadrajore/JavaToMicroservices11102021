@@ -12,10 +12,10 @@ public class ProductRepositoryImpl1 implements ProductRepository {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
-	
+	// C,R->All R->productId,U -> update,D -> Delete
 	
 	public void insertProduct(Product product) {
-		jdbcTemplate.update("insert into product values (1,'Ram',10000);");
+		jdbcTemplate.update("insert into product values (1,'HDD',4500);");
 		
 	}
 
