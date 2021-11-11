@@ -9,11 +9,11 @@ import com.zensar.entities.Student;
 
 public interface StudentService {
 
-	public List<Student> getAllStudents();
+	public Iterable<Student> getAllStudents();
 	
 	public Student getStudent(int studentId);
 	
-	public boolean insertStudent( Student student);
+	public Student insertStudent( Student student);
 	
 	public void deleteStudent(int studentId) ;
 	
