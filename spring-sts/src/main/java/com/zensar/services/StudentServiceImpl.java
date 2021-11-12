@@ -20,7 +20,8 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	public Student getStudent(int studentId) {
-		return studentRepository.findById(studentId).get();
+		// return studentRepository.findOne(studentId);  // 1.5.4
+		return studentRepository.findById(studentId).get();   // 2.5.6  
 	}
 
 	public Student insertStudent(Student student) {
@@ -28,7 +29,8 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	public void deleteStudent(int studentId) {
-		studentRepository.deleteById(studentId);
+		//studentRepository.delete(studentId);  //1.5.4.RELEASE
+		 studentRepository.deleteById(studentId);  //2.5.6
 	}
 
 	public Student updateStudent(int studentId, Student student) {
