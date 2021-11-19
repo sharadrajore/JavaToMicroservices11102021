@@ -80,6 +80,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Java11102021\war-demo"/>
 			<item value="D:\Java11102021\spring-initializr"/>
 		</list>
 		<list key="projectNameTemplate">

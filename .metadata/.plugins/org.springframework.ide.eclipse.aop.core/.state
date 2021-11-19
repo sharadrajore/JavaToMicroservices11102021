@@ -2,4 +2,5 @@
 <aop-reference-model>
 <aop-project name="spring-initializr"/>
 <aop-project name="spring-sts"/>
+<aop-project name="war-demo"/>
 </aop-reference-model>
