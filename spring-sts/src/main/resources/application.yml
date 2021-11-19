@@ -1,0 +1,15 @@
+server:
+  servlet:
+    context-path: /student-app
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/batchdb
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
