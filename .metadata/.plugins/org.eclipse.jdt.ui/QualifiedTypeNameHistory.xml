@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Properties"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="com.zensar.spring.service.ProductServiceImpl1"/>
 <fullyQualifiedTypeName name="com.zensar.spring.service.ProductService"/>
 <fullyQualifiedTypeName name="com.zensar.spring.repository.ProductRepository"/>
@@ -35,29 +33,31 @@
 <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
-<fullyQualifiedTypeName name="com.zensar.services.StudentService"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="com.zensar.repository.StudentRepository"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
-<fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.Iterable"/>
 <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
 <fullyQualifiedTypeName name="javax.persistence.Table"/>
-<fullyQualifiedTypeName name="javax.persistence.Column"/>
 <fullyQualifiedTypeName name="org.hibernate.annotations.Generated"/>
 <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
 <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 <fullyQualifiedTypeName name="org.springframework.boot.web.servlet.support.SpringBootServletInitializer"/>
+<fullyQualifiedTypeName name="org.springframework.data.repository.Repository"/>
+<fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="com.zensar.services.StudentService"/>
+<fullyQualifiedTypeName name="com.zensar.entities.Student"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
 </qualifiedTypeNameHistroy>

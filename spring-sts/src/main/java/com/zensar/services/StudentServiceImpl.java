@@ -1,6 +1,10 @@
 package com.zensar.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.zensar.entities.Student;
@@ -15,9 +19,10 @@ public class StudentServiceImpl implements StudentService {
 	@Autowired
 	private StudentRepository studentRepository;
 
-	public Iterable<Student> getAllStudents() {
-		return studentRepository.findAll();
-	}
+	/*
+	 * public Iterable<Student> getAllStudents() { return
+	 * studentRepository.findAll(); }
+	 */
 
 	public Student getStudent(int studentId) {
 		// return studentRepository.findOne(studentId);  // 1.5.4
@@ -37,5 +42,20 @@ public class StudentServiceImpl implements StudentService {
 		Student s1 = getStudent(studentId);
 		return studentRepository.save(s1);
 	}
+
+	@Override
+	public List<Student> getAllStudentsByName(String studentName) {
+		return studentRepository.test(studentName);
+	}
+	
+	// getByStudentNameAndStudentAge
+	public List<Student> getAllStudentsByNameAndAge(String studentName,int studentAge) {
+		return studentRepository.nameAndAge(studentName,studentAge);
+	}
+	
+	public Page<Student>  getAllStudents(Pageable pageable){
+		return studentRepository.findAll(pageable);
+	}
+	
 
 }
