@@ -10,8 +10,8 @@ import com.zensar.entities.Student;
 
 public interface StudentService {
 
-	public Iterable<Student> getAllStudents(Pageable pageable);
-	
+	//public Iterable<Student> getAllStudents(Pageable pageable);
+	public Iterable<Student> getAllStudents();
 	public Student getStudent(int studentId);
 	
 	public Student insertStudent( Student student);

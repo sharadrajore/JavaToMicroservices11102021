@@ -19,14 +19,13 @@ public class StudentServiceImpl implements StudentService {
 	@Autowired
 	private StudentRepository studentRepository;
 
-	/*
-	 * public Iterable<Student> getAllStudents() { return
-	 * studentRepository.findAll(); }
-	 */
+	public List<Student> getAllStudents() {
+		return studentRepository.findAll();
+	}
 
 	public Student getStudent(int studentId) {
-		// return studentRepository.findOne(studentId);  // 1.5.4
-		return studentRepository.findById(studentId).get();   // 2.5.6  
+		// return studentRepository.findOne(studentId); // 1.5.4
+		return studentRepository.findById(studentId).get(); // 2.5.6
 	}
 
 	public Student insertStudent(Student student) {
@@ -34,8 +33,8 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	public void deleteStudent(int studentId) {
-		//studentRepository.delete(studentId);  //1.5.4.RELEASE
-		 studentRepository.deleteById(studentId);  //2.5.6
+		// studentRepository.delete(studentId); //1.5.4.RELEASE
+		studentRepository.deleteById(studentId); // 2.5.6
 	}
 
 	public Student updateStudent(int studentId, Student student) {
@@ -47,15 +46,15 @@ public class StudentServiceImpl implements StudentService {
 	public List<Student> getAllStudentsByName(String studentName) {
 		return studentRepository.test(studentName);
 	}
-	
+
 	// getByStudentNameAndStudentAge
-	public List<Student> getAllStudentsByNameAndAge(String studentName,int studentAge) {
-		return studentRepository.nameAndAge(studentName,studentAge);
+	public List<Student> getAllStudentsByNameAndAge(String studentName, int studentAge) {
+		return studentRepository.nameAndAge(studentName, studentAge);
 	}
-	
-	public Page<Student>  getAllStudents(Pageable pageable){
-		return studentRepository.findAll(pageable);
-	}
-	
+
+	/*
+	 * public Page<Student> getAllStudents(Pageable pageable){ return
+	 * studentRepository.findAll(pageable); }
+	 */
 
 }
