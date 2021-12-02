@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.zensar.entity.Student;
+import com.zensar.exceptions.StudentNotFoundException;
 import com.zensar.repository.StudentRepository;
 
 @Service
@@ -15,7 +16,7 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public Student getStudent(int studentId) {
-		return repository.findById(studentId).get();
+		return repository.findById(studentId).orElse(null);
 
 	}
 

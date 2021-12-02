@@ -1,6 +1,12 @@
 package com.zensar.config;
 
-/*@Configuration
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.hazelcast.config.Config;
+import com.hazelcast.config.MapConfig;
+
+@Configuration
 public class StudentCacheConfig {
 
 	@Bean
@@ -11,4 +17,4 @@ public class StudentCacheConfig {
 				.setTimeToLiveSeconds(3));
 	}
 
-}*/
+}

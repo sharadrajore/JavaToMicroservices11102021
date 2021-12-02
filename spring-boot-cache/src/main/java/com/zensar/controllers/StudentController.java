@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.zensar.entity.Student;
+import com.zensar.exceptions.StudentNotFoundException;
 import com.zensar.services.StudentService;
 
 @RestController
@@ -23,10 +24,16 @@ public class StudentController {
 	private StudentService service;
 
 	@GetMapping("/students/{studentId}")
-	//@Transactional(readOnly=true)
-	//@Cacheable("student-cache")
+	@Transactional(readOnly=true)
+	@Cacheable("student-cache")
 	public Student getStudent(@PathVariable("studentId") int studentId) {
-		return service.getStudent(studentId);
+		Student student=service.getStudent(studentId);
+		if(student==null) {
+			System.out.println("Inside get student()");
+			throw new StudentNotFoundException();
+		}
+		
+		return student;
 	}
 	
 	
