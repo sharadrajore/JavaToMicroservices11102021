@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="spring-boot-mvc-thymeleaf"/>
-<aop-project name="spring-boot-cache"/>
+<aop-project name="product-service"/>
+<aop-project name="coupon-service"/>
 </aop-reference-model>

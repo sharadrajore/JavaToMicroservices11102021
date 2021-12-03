@@ -16,6 +16,8 @@ public class Product {
 	private String description;
 	private BigDecimal price;
 
+	private String couponCode;
+
 	public Product() {
 		super();
 	}
@@ -26,6 +28,23 @@ public class Product {
 		this.name = name;
 		this.description = description;
 		this.price = price;
+	}
+
+	public Product(long id, String name, String description, BigDecimal price, String couponCode) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.couponCode = couponCode;
+	}
+
+	public String getCouponCode() {
+		return couponCode;
+	}
+
+	public void setCouponCode(String couponCode) {
+		this.couponCode = couponCode;
 	}
 
 	public long getId() {
