@@ -29,7 +29,10 @@ public class ProductResource {
 		
 		// http://localhost:8080/couponapi/coupons/COOL50
 		
-		Coupon coupon=restTemplate.getForObject("http://localhost:8083/couponapi/coupons/"+product.getCouponCode(), Coupon.class);
+		//Coupon coupon=restTemplate.getForObject("http://localhost:8083/couponapi/coupons/"+product.getCouponCode(), Coupon.class);
+		
+		Coupon coupon=restTemplate.getForObject("http://COUPON-SERVICE/couponapi/coupons/"+product.getCouponCode(), Coupon.class);
+		
 		
 		BigDecimal productCost= product.getPrice().subtract(coupon.getDiscount());
 		product.setPrice(productCost);
