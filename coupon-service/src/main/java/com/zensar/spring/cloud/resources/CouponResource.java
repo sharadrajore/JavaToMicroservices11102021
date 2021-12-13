@@ -1,6 +1,7 @@
 package com.zensar.spring.cloud.resources;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,6 +15,9 @@ import com.zensar.spring.cloud.services.CouponService;
 @RestController
 @RequestMapping("/couponapi/")
 public class CouponResource {
+	
+	@Value("${spring.server.name}")
+	private String name;
 
 	@Autowired
 	private CouponService couponService;
@@ -26,6 +30,7 @@ public class CouponResource {
 
 	@GetMapping("/coupons/{couponCode}")
 	public Coupon getCoupon(@PathVariable("couponCode")String couponCode) {
+		System.out.println("Response from  "+name);
 		return couponService.getCoupon(couponCode);
 	}
 
