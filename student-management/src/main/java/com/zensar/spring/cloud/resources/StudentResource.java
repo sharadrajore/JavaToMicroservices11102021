@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.zensar.spring.cloud.model.Student;
-import com.zensar.spring.cloud.repository.StudentRepository;
+import com.zensar.spring.cloud.repository.StudentMongoRepository;
 
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -20,8 +20,11 @@ import io.swagger.annotations.ApiParam;
 @RequestMapping("/api")
 public class StudentResource {
 	
+	//@Autowired
+	//private StudentRepository studentRepository;
+	
 	@Autowired
-	private StudentRepository studentRepository;
+	private StudentMongoRepository studentRepository;
 	
 	@GetMapping("/students")
 	public List<Student> getAllStudents(){
@@ -29,10 +32,10 @@ public class StudentResource {
 	}
 	
 	
-	@GetMapping("/students/{studentId}")
+	@GetMapping("/students/{studentName}")
 	@ApiOperation(value = "Find Student By Id", notes = "Provide an id to look up specific Student form Student Resource")
-	public Student getStudent(@ApiParam(value = "Id of the student",required = true)@PathVariable("studentId")int studentId) {
-		return studentRepository.findById(studentId).get();
+	public List<Student> getStudent(@ApiParam(value = "Id of the student",required = true)@PathVariable("studentName")String studentName) {
+		return studentRepository.findByStudentName(studentName);
 	}
 	
 	@PostMapping("/students")

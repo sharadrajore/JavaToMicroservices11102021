@@ -1,16 +1,16 @@
 package com.zensar.spring.cloud.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(description = "Student Model")
-@Entity
+//@Entity
+@Document(collection = "students")
 public class Student {
 	
-	@Id
+	//@Id
 	@ApiModelProperty(notes="Student Id ")
 	private int studentId;
 	
